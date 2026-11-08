@@ -1,5 +1,6 @@
 <script lang="ts">
     import { page } from "$app/state";
+    import { base } from "$app/paths";
 
     const tabs = [
         { label: "Intro", href: "/" },
@@ -9,12 +10,12 @@
 
     const isActive = (href: string) =>
         href === "/"
-            ? page.url.pathname === "/"
-            : page.url.pathname.startsWith(href);
+            ? page.route.id === "/"
+            : page.params.page === href.slice(1);
 </script>
 
 <header class="site-header">
-    <a class="identity" href="/" aria-label="Portfolio home">
+    <a class="identity" href={`${base}/`} aria-label="Portfolio home">
         <span class="mark" aria-hidden="true">&lt;/&gt;</span>
         <span>Hugo Ruivo</span>
     </a>
@@ -22,7 +23,7 @@
     <nav aria-label="Main navigation">
         {#each tabs as tab, index}
             <a
-                href={tab.href}
+                href={tab.href === '/' ? `${base}/` : `${base}${tab.href}/`}
                 class:active={isActive(tab.href)}
                 aria-current={isActive(tab.href) ? "page" : undefined}
             >

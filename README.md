@@ -54,6 +54,8 @@ To add a section, create another `.md` file in the appropriate page folder. To r
 
 The site uses `adapter-static` to prerender every page into `build/`. No server is required.
 
+Place your résumé PDF at `static/resume.pdf` before publishing. The résumé page links directly to this file for download.
+
 1. Push this repository to GitHub with `main` as the default branch.
 2. In the repository's **Settings → Pages**, choose **GitHub Actions** as the build and deployment source.
 3. Run **Deploy portfolio to GitHub Pages** from the **Actions** tab, or push another commit to `main`.

@@ -1,5 +1,6 @@
 <script lang="ts">
   import type { ContentSection } from '$lib/types';
+  import { base } from '$app/paths';
 
   let { section, index }: { section: ContentSection; index: number } = $props();
   let Content = $derived(section.component);
@@ -23,7 +24,9 @@
       </ul>
     {/if}
     {#if section.href}
-      <a class="text-link" href={section.href}>{section.linkLabel ?? 'View project'} <span aria-hidden="true">↗</span></a>
+      <a class="text-link" href={section.href.startsWith('/') ? `${base}${section.href}` : section.href} download={section.download}>
+        {section.linkLabel ?? 'View project'} <span aria-hidden="true">{section.download ? '↓' : '↗'}</span>
+      </a>
     {/if}
   </div>
 </section>

@@ -16,6 +16,7 @@ export interface SectionMeta {
     stack?: string[];
     href?: string;
     linkLabel?: string;
+    download?: boolean;
 }
 
 export interface MarkdownModule {

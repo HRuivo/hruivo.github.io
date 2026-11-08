@@ -1,11 +1,10 @@
 ---
-title: Need the full version?
+title: Download my résumé.
 eyebrow: Resume PDF
-description: Replace this link with your downloadable résumé, or get in touch for a conversation.
 order: 10
 layout: contact
-href: mailto:hello@example.com?subject=Resume%20request
-linkLabel: Request my resume
+href: /resume.pdf
+linkLabel: Download PDF
+download: true
 ---
 
-References and detailed project history are available on request.

@@ -12,6 +12,7 @@ stack:
   - Zig
   - Python
   - Bun
+  - Docker
 href: https://lnkd.in/p/eTCQHC_c
 linkLabel: Linkedin Post
 ---

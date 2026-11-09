@@ -1,5 +1,5 @@
 ---
-title: Selected projects
+title: What I’ve Been Building
 eyebrow: Projects
 order: 1
 layout: hero

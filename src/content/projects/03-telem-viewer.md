@@ -13,6 +13,7 @@ stack:
   - Svelte
   - Bun
   - Typescript
+  - Docker
 href: https://lnkd.in/p/eKaZZnAv
 linkLabel: Linkedin Post
 ---

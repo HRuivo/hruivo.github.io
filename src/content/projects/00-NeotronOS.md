@@ -4,7 +4,7 @@ eyebrow: Operating Systems
 description: Experimental RISC-V operating system written in Zig, running on QEMU.
 order: 1
 layout: project
-screenshot: ""
+screenshot: /images/neotron.jpg
 screenshotAlt: ""
 videoUrl: ""
 year: 2026

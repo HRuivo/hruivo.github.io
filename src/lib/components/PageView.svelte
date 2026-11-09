@@ -15,7 +15,7 @@
       <Section section={pageIntro} index={0} />
     {/if}
     {#each listedSections as section, index (section.id)}
-      <Section {section} {index} />
+      <Section {section} {index} showMedia={slug === 'projects' && section.layout === 'project'} />
     {/each}
   </main>
 

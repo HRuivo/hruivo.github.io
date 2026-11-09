@@ -4,6 +4,9 @@ eyebrow: AI & Interactive 3D
 description: Car configurator in unreal engine with an agentic interface to interact with the experience and configure the vehicle.
 order: 9
 layout: project
+screenshot: ""
+screenshotAlt: ""
+videoUrl: ""
 year: 2025
 stack:
   - OpenAI / llama

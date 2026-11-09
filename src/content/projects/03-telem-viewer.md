@@ -4,6 +4,9 @@ eyebrow: Mission Data Visualization
 description: NASA's Artemis II telemetry visualized with Telion and Mission Dashboard.
 order: 4
 layout: project
+screenshot: ""
+screenshotAlt: ""
+videoUrl: ""
 year: 2026
 stack:
   - Svelte

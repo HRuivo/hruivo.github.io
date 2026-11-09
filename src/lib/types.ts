@@ -17,6 +17,9 @@ export interface SectionMeta {
     href?: string;
     linkLabel?: string;
     download?: boolean;
+    screenshot?: string;
+    screenshotAlt?: string;
+    videoUrl?: string;
 }
 
 export interface MarkdownModule {

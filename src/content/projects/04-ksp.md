@@ -4,6 +4,9 @@ eyebrow: Flight Control & Simulation
 description: A suite of internal tools that shortened the path from local change to reliable production release.
 order: 6
 layout: project
+screenshot: ""
+screenshotAlt: ""
+videoUrl: ""
 year: 2022
 stack:
   - Zig

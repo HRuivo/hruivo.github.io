@@ -4,6 +4,9 @@ eyebrow: Language & Compiler Design
 description: A flight-mission language and compiler targeting bare-metal RISC-V (RV32I).
 order: 3
 layout: project
+screenshot: ""
+screenshotAlt: ""
+videoUrl: ""
 year: 2026
 stack:
   - Zig

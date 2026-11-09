@@ -176,6 +176,18 @@ section.hero .description { max-width: 650px; margin-top: 19px; font-size: .92re
 section.hero .section-content { max-width: 650px; margin-top: 5px; font-size: .88rem; }
 
 section.project .project-year { margin: 0 0 9px; color: var(--soft); font-size: .57rem; }
+.project-screenshot {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  margin: 18px 0;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  background: #f2f2ed;
+}
+.section-links { display: flex; flex-wrap: wrap; gap: 12px 20px; }
 .stack { display: flex; flex-wrap: wrap; gap: 5px; margin: 14px 0 17px; padding: 0; list-style: none; }
 .stack li {
   padding: 4px 7px;

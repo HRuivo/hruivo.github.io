@@ -4,6 +4,9 @@ eyebrow: Telemetry & Command Systems
 description: Car configurator in unreal engine with an agentic interface to interact with the experience and configure the vehicle.
 order: 5
 layout: project
+screenshot: ""
+screenshotAlt: ""
+videoUrl: ""
 year: 2026
 stack:
   - Lunara

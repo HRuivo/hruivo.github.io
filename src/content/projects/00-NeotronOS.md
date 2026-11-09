@@ -4,6 +4,9 @@ eyebrow: Operating Systems
 description: Experimental RISC-V operating system written in Zig, running on QEMU.
 order: 1
 layout: project
+screenshot: ""
+screenshotAlt: ""
+videoUrl: https://www.youtube.com/watch?v=pSr4zassAL8&list=PLmKZwgrxRmasAT5Spt9HBBjpy93_9vZbm
 year: 2026
 stack:
   - Zig

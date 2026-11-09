@@ -44,6 +44,18 @@ Available layouts are `hero`, `text`, `split`, `list`, `project`, and `contact`.
 
 To add a section, create another `.md` file in the appropriate page folder. To reorder sections, change `order`. Update the placeholder email addresses, résumé details, project links, and personal copy before publishing.
 
+### Project screenshots and videos
+
+Each project shows a blank 16:9 screenshot placeholder until you provide an image. Put screenshots in `static/images/` and replace the existing fields in the project's Markdown frontmatter (between the opening and closing `---`). Keep only one of each field:
+
+```yaml
+screenshot: /images/neotron.png
+screenshotAlt: Neotron OS running its shell in QEMU
+videoUrl: https://www.youtube.com/watch?v=YOUR_VIDEO_ID
+```
+
+Leave `videoUrl` empty to hide the “Watch demo” link. Leave `screenshot` empty to keep the blank placeholder. Image paths automatically include the GitHub Pages base path. Videos open through a regular link.
+
 ## Add a page
 
 1. Add its slug to `pageSlugs` in `src/lib/types.ts`.

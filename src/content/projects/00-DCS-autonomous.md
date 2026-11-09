@@ -4,6 +4,9 @@ eyebrow: Autonomous Flight
 description: Autonomous takeoff, waypoint navigation, and landing for the F-16 and Su-25 in DCS.
 order: 1
 layout: project
+screenshot: ""
+screenshotAlt: ""
+videoUrl: ""
 year: 2026
 stack:
   - Lunara

@@ -6,7 +6,7 @@ order: 9
 layout: project
 screenshot: ""
 screenshotAlt: ""
-videoUrl: ""
+videoSrc: /videos/ai_unreal_v1.mp4
 year: 2025
 stack:
   - OpenAI / llama

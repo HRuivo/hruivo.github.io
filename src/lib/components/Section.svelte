@@ -20,6 +20,29 @@
     {#if section.year}<p class="project-year">{section.year}</p>{/if}
     <Content />
     {#if showMedia}
+      {#if section.videoSrc}
+        <!-- svelte-ignore a11y_media_has_caption (Silent demos need no captions; videos with audio can supply videoCaptions.) -->
+        <video
+          class="project-video"
+          src={section.videoSrc.startsWith('/') ? `${base}${section.videoSrc}` : section.videoSrc}
+          poster={section.screenshot ? (section.screenshot.startsWith('/') ? `${base}${section.screenshot}` : section.screenshot) : undefined}
+          aria-label={`${section.title} demo`}
+          controls
+          playsinline
+          preload="metadata"
+        >
+          {#if section.videoCaptions}
+            <track
+              kind="captions"
+              src={section.videoCaptions.startsWith('/') ? `${base}${section.videoCaptions}` : section.videoCaptions}
+              srclang={section.videoLanguage || 'en'}
+              label="Captions"
+              default
+            />
+          {/if}
+          <a href={section.videoSrc.startsWith('/') ? `${base}${section.videoSrc}` : section.videoSrc}>Download {section.title} demo</a>
+        </video>
+      {:else}
       <img
         class="project-screenshot"
         src={screenshot.startsWith('/') ? `${base}${screenshot}` : screenshot}
@@ -29,6 +52,7 @@
         loading="lazy"
         decoding="async"
       />
+      {/if}
     {/if}
     {#if section.stack?.length}
       <ul class="stack" aria-label="Technologies">

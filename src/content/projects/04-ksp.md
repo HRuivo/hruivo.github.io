@@ -4,7 +4,7 @@ eyebrow: Flight Control & Simulation
 description: A suite of internal tools that shortened the path from local change to reliable production release.
 order: 6
 layout: project
-screenshot: ""
+screenshot: "/images/ksp_launch_01.jpg"
 screenshotAlt: ""
 videoUrl: ""
 year: 2022

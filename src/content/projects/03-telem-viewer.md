@@ -8,6 +8,7 @@ screenshot: ""
 screenshotAlt: ""
 videoUrl: ""
 year: 2026
+videoSrc: /videos/artemis_telem.mp4
 stack:
   - Svelte
   - Bun

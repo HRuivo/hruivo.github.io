@@ -4,7 +4,7 @@ eyebrow: Digital Hardware Design
 description: CHIP-8 implemented in VHDL, running on the GameBub console's FPGA.
 order: 8
 layout: project
-screenshot: ""
+screenshot: /images/chip8-core.jpg
 screenshotAlt: ""
 videoUrl: ""
 year: 2026

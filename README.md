@@ -54,7 +54,17 @@ screenshotAlt: Neotron OS running its shell in QEMU
 videoUrl: https://www.youtube.com/watch?v=YOUR_VIDEO_ID
 ```
 
-Leave `videoUrl` empty to hide the “Watch demo” link. Leave `screenshot` empty to keep the blank placeholder. Image paths automatically include the GitHub Pages base path. Videos open through a regular link.
+To embed a video, put an MP4 or WebM file in `static/videos/` and add this field to the project's frontmatter:
+
+```yaml
+videoSrc: /videos/neotron-demo.mp4
+```
+
+The video replaces the screenshot with a responsive player with playback controls and inline mobile playback. When `screenshot` is set, it becomes the video's poster image. Videos load metadata only until played. Use a browser-compatible format such as MP4 with H.264 video and AAC audio. Omit `static` from asset URLs; image and embedded video paths automatically include the GitHub Pages base path.
+
+For videos with speech or meaningful audio, add a WebVTT captions file using `videoCaptions: /videos/neotron-demo.vtt`. Set `videoLanguage` to its language code (defaults to `en`).
+
+Leave `videoSrc` empty to show the screenshot, or the blank placeholder when `screenshot` is also empty. `videoUrl` remains an optional external “Watch demo” link; leave it empty to hide the link.
 
 ## Add a page
 

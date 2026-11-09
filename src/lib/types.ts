@@ -19,6 +19,9 @@ export interface SectionMeta {
     download?: boolean;
     screenshot?: string;
     screenshotAlt?: string;
+    videoSrc?: string;
+    videoCaptions?: string;
+    videoLanguage?: string;
     videoUrl?: string;
 }
 

@@ -5,15 +5,16 @@
     { id: 'overview', title: 'Overview' },
     { id: 'engineering-challenges', title: 'Engineering challenges' },
     { id: 'architecture', title: 'Solution architecture' },
+    { id: 'nuke-deadline', title: 'Nuke & Deadline tooling' },
     { id: 'contributions', title: 'My contributions' },
     { id: 'outcome', title: 'Outcome' }
   ];
-  const technologies = ['C++', 'Python', 'Unreal Engine', 'FastAPI', 'REST', 'SvelteKit', 'Bun', 'Docker', 'Perforce', 'Deadline', 'Jenkins'];
+  const technologies = ['C++', 'Python', 'Unreal Engine', 'Nuke', 'FastAPI', 'REST', 'SvelteKit', 'Bun', 'Docker', 'Perforce', 'Deadline', 'Jenkins'];
 </script>
 
 <svelte:head>
   <title>Multi-Brand Automotive CGI Production Pipeline — Hugo Ruivo</title>
-  <meta name="description" content="Production pipeline systems for multi-brand automotive CGI: data normalization, Unreal Engine tooling, web services, Perforce, CI/CD, and Deadline render integrations." />
+  <meta name="description" content="Multi-brand automotive CGI pipeline engineering: shared vehicle data, Unreal Engine tooling, web services, and Python Deadline plugins for Nuke automation." />
 </svelte:head>
 
 <div class="page-layout">
@@ -33,7 +34,7 @@
       <h2 id="overview-title">Overview</h2>
       <p>Designed and developed production pipeline systems for automotive CGI workflows supporting multiple vehicle brands.</p>
       <p>The pipeline addresses the challenge of integrating brand-specific vehicle data into a common production environment, enabling shared tooling and reusable rendering workflows across projects.</p>
-      <p>The system combines Unreal Engine production tools, web-based interfaces, Python backend services, source-control infrastructure, and automated rendering.</p>
+      <p>The system combines Unreal Engine production tools, Nuke automation, web-based interfaces, Python backend services, source-control infrastructure, and automated rendering.</p>
       <p>My responsibilities included system architecture, data pipeline design, tooling, Perforce stream architecture, CI/CD, Deadline render integrations, and Unreal Engine rigging tools.</p>
     </section>
 
@@ -60,9 +61,20 @@
 
       <h3>Rendering infrastructure</h3>
       <p>Rendering can be initiated from Unreal Engine or a web application, triggering Deadline jobs through custom rendering integrations.</p>
+      <p>A dedicated Python Deadline plugin also invokes Nuke scripts as part of the production tooling.</p>
 
       <h3>Infrastructure and delivery</h3>
       <p>Docker is used for deployment of web frontend and backend services. Jenkins supports CI/CD workflows, while Perforce provides source control and stream organization for shared assets, reusable plugins, and project-specific development.</p>
+    </section>
+
+    <section id="nuke-deadline" aria-labelledby="nuke-deadline-title">
+      <h2 id="nuke-deadline-title">From shared Python scripts to a dedicated Deadline plugin</h2>
+      <h3>The problem</h3>
+      <p>Existing Python automation for Nuke workflows lived in an ad hoc shared folder on the company network. Hardcoded values in the scripts caused recurring issues, and deployment needed a more deliberate home.</p>
+      <h3>What I changed</h3>
+      <p>I refactored the existing automation into a dedicated Python Deadline plugin that calls Nuke scripts. I moved deployment into the Deadline plugin structure and reworked the logic to remove the hardcoded assumptions behind the recurring issues.</p>
+      <h3>The result</h3>
+      <p>The automation became a dedicated Deadline integration with a defined deployment location. Reworking the hardcoded logic addressed recurring problems in the earlier scripts.</p>
     </section>
 
     <section id="contributions" aria-labelledby="contributions-title">
@@ -73,7 +85,7 @@
         <li>Developed production tooling and Unreal Engine rigging tools.</li>
         <li>Designed and configured Perforce stream workflows.</li>
         <li>Implemented CI/CD automation.</li>
-        <li>Developed custom Deadline render plugins.</li>
+        <li>Developed custom Deadline render plugins, including a Python plugin that executes Nuke scripts and replaces shared-folder automation with reworked logic and deployment.</li>
         <li>Contributed to the integration of web-based production workflows and Unreal Engine.</li>
       </ul>
     </section>

@@ -1,6 +1,6 @@
 ---
-title: Resume
-eyebrow: Resume
+title: Senior Software Engineer
+eyebrow: CGI pipelines & production systems
 description: Senior Software Engineer with 10+ years across CGI production pipelines, real-time 3D, and simulation.
 order: 1
 layout: hero

@@ -1,6 +1,6 @@
 # Minimal developer portfolio
 
-A content-driven portfolio built with SvelteKit, TypeScript, Bun, and mdsvex. The site has four top-level pages—Intro, Work, Projects, and Resume—and assembles each page automatically from Markdown sections.
+A content-driven portfolio built with SvelteKit, TypeScript, Bun, and mdsvex. The site has three top-level pages—Intro, Work, and Projects—and assembles each page automatically from Markdown sections. Intro contains the professional overview, skills, experience, and CV download.
 
 ## Run it
 
@@ -68,9 +68,9 @@ Leave `videoSrc` empty to show the screenshot, or the blank placeholder when `sc
 
 ## Professional case study
 
-The automotive CGI pipeline case study lives at `/work/automotive-cgi-pipeline/`, implemented in `src/routes/work/automotive-cgi-pipeline/+page.svelte`. It is prerendered alongside the Markdown pages. Edit its technical diagrams in `static/images/automotive-pipeline-architecture.svg` and `static/images/vehicle-data-normalization.svg`.
+The automotive CGI pipeline case study lives at `/work/automotive-cgi-pipeline/`, implemented in `src/routes/work/automotive-cgi-pipeline/+page.svelte`. It is prerendered alongside the Markdown pages. Earlier conceptual diagrams remain in `static/images/automotive-pipeline-architecture.svg` and `static/images/vehicle-data-normalization.svg` for reuse.
 
-Homepage and Work cards link to the case study through Markdown frontmatter. Internal links and diagrams include the configured GitHub Pages base path. The Work navigation tab stays active on the nested case study route.
+The current-role section on Intro and the featured Work card link to the case study through Markdown frontmatter. Internal links and diagrams include the configured GitHub Pages base path. The Work navigation tab stays active on the nested case study route.
 
 The case study uses verified facts from `halon_portfolio_codex_handoff.md`. Detailed API paths, Perforce stream topology, Deadline execution modes, and performance metrics are intentionally omitted pending owner confirmation. Keep Docker deployment scoped to the web frontend and backend.
 
@@ -86,7 +86,7 @@ The downloadable CV is `static/resume.pdf`; its application-specific editable so
 
 The site uses `adapter-static` to prerender every page into `build/`. No server is required.
 
-Place your résumé PDF at `static/resume.pdf` before publishing. The résumé page links directly to this file for download.
+Place your résumé PDF at `static/resume.pdf` before publishing. The Intro page links directly to this file for download.
 
 1. Push this repository to GitHub with `main` as the default branch.
 2. In the repository's **Settings → Pages**, choose **GitHub Actions** as the build and deployment source.

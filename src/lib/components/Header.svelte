@@ -6,7 +6,6 @@
         { label: "Intro", href: "/" },
         { label: "Work", href: "/work" },
         { label: "Projects", href: "/projects" },
-        { label: "Resume", href: "/resume" },
     ];
 
     const isActive = (href: string) =>

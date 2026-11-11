@@ -1,6 +1,6 @@
 import type { Component } from "svelte";
 
-export const pageSlugs = ["intro", "work", "projects", "resume"] as const;
+export const pageSlugs = ["intro", "work", "projects"] as const;
 export type PageSlug = (typeof pageSlugs)[number];
 
 export type SectionLayout =

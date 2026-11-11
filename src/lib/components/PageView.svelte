@@ -7,7 +7,7 @@
   const pageMeta: Record<PageSlug, { title: string; description: string }> = {
     intro: {
       title: 'Hugo Ruivo — Senior Software Engineer · CGI Pipelines & Production Systems',
-      description: 'Senior software engineer building CGI production pipelines, artist-facing Unreal Engine tools, Python services, and rendering infrastructure.'
+      description: 'Senior software engineer with 10+ years in CGI pipelines, C++, Python, Unreal Engine, and simulation. Experience, core skills, and a downloadable CV.'
     },
     work: {
       title: 'Professional Work — Hugo Ruivo',
@@ -16,10 +16,6 @@
     projects: {
       title: 'Personal Projects — Hugo Ruivo',
       description: 'Independent work in compiler design, telemetry, RISC-V systems, FPGA development, and AI integration with Unreal Engine.'
-    },
-    resume: {
-      title: 'Resume — Hugo Ruivo · Senior Software Engineer',
-      description: '10+ years in CGI pipelines, C++, Python, Unreal Engine, and simulation. Professional experience, core skills, and a downloadable CV.'
     }
   };
   let sections = $derived(getSections(slug));
@@ -48,7 +44,7 @@
     <nav>
       {#each listedSections.filter((section) => section.layout !== 'hero' && section.layout !== 'contact') as section}
         <a href={`#${section.id}`}>
-          {section.title}{#if slug === 'resume' && section.layout === 'project' && section.description} · {section.description.split(' · ')[0]}{/if}
+          {section.title}{#if slug === 'intro' && section.layout === 'project' && section.description} · {section.description.split(' · ')[0]}{/if}
         </a>
       {/each}
     </nav>

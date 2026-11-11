@@ -175,6 +175,21 @@ section.hero .eyebrow { margin-bottom: 17px; color: var(--accent); }
 section.hero .description { max-width: 650px; margin-top: 19px; font-size: .92rem; line-height: 1.55; }
 section.hero .section-content { max-width: 650px; margin-top: 5px; font-size: .88rem; }
 
+.page-content > section.feature {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 18px;
+  margin: 30px 0;
+  padding: 28px;
+  border: 1px solid var(--line);
+  background: #f2f2ed;
+}
+section.feature .section-index { display: none; }
+section.feature .eyebrow { color: var(--accent); }
+section.feature h2 { max-width: 670px; font-size: clamp(1.5rem, 2.6vw, 2.2rem); }
+.feature-title { text-decoration: none; }
+.feature-title:hover { color: var(--accent); }
+.feature-title:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+
 section.project .project-year { margin: 0 0 9px; color: var(--soft); font-size: .57rem; }
 .project-screenshot,
 .project-video {
@@ -276,6 +291,7 @@ footer {
   .page-content > section,
   .page-content > section.contact { grid-template-columns: 1fr; gap: 15px; padding: 30px 0; margin-top: 0; }
   .page-content > section.hero { padding: 47px 0 38px; }
+  .page-content > section.feature { margin-block: 24px; padding: 22px 18px; }
   .section-index { display: none; }
   .section-heading,
   .section-content,

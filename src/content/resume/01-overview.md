@@ -1,9 +1,11 @@
 ---
 title: Resume
 eyebrow: Resume
-description: Nearly a decade building and leading real-time 3D systems across automotive visualization, configurators, and simulation.
+description: Senior Software Engineer with 10+ years across CGI production pipelines, real-time 3D, and simulation.
 order: 1
 layout: hero
 ---
 
-My professional work spans real-time R&D, software architecture, and technical leadership, building Unreal Engine experiences and production tooling. Outside work, I pursue personal projects in systems development, low-level programming, and FPGA design.
+I design connected production systems using C++, Python, Unreal Engine, and web technologies. My work spans shared vehicle data, artist-facing tools, render automation, Perforce, and CI/CD, with technical leadership across developers and artists.
+
+Personal projects in compilers, telemetry, RISC-V, and FPGA design extend that professional experience into low-level systems engineering.

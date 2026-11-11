@@ -2,7 +2,7 @@
 title: DCS Autonomous Aircraft
 eyebrow: Autonomous Flight
 description: Autonomous takeoff, waypoint navigation, and landing for the F-16 and Su-25 in DCS.
-order: 1
+order: 2
 layout: project
 screenshot: /images/dcs.jpg
 screenshotAlt: ""

@@ -9,15 +9,21 @@ stack:
   - Unreal Engine
   - C++
   - Python
+  - FastAPI
+  - SvelteKit
   - Bun
-  - Fullstack
-  - Real-time rendering
-  - Render Farms (Deadline)
-  - Pixel Streaming
+  - Docker (web services)
+  - Perforce
+  - Deadline
+  - Jenkins
+href: /work/automotive-cgi-pipeline/
+linkLabel: Read the pipeline case study
 ---
 
-Lead real-time R&D for automotive rendering and configurator projects, with end-to-end ownership of architecture, performance, pipeline development, and delivery.
-- Architect a modular, data-driven framework that supports multiple vehicle brands, rendering workflows, and interactive configurator products.
-- Established a scalable Perforce structure for shared vehicle data, project-specific delivery, and reusable tooling plugins.
-- Integrated Deadline with cloud-based workers to scale production rendering beyond local capacity.
-- Built Jenkins CI/CD pipelines using Python, shell tooling, and Unreal Engine automation tests to detect code and content regressions.
+Lead architecture, pipeline development, and delivery for automotive CGI production, collaborating with developers and artists.
+
+- Design a multi-brand pipeline that converts brand-specific vehicle imports into a common data structure for shared downstream tools.
+- Design and integrate SvelteKit / Bun frontends and Python / FastAPI REST services, deployed using Docker for the web components.
+- Develop production tooling, Unreal Engine rigging tools, and custom Deadline render plugins; enable render submission from Unreal Engine or a browser.
+- Design Perforce stream organization for shared vehicle data, reusable plugins, and project workflows.
+- Build and integrate Jenkins CI/CD using Python, shell tooling, and Unreal Engine automation tests.

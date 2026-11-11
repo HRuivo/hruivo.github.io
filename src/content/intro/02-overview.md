@@ -1,13 +1,13 @@
 ---
 title: What I bring.
 eyebrow: What I do
-order: 2
+order: 3
 layout: split
 ---
 
-10+ years building simulation, visualization, and interactive 3D software.
+Production engineering across C++, Python, Unreal Engine, and web interfaces.
 
-- C++ and Unreal Engine development
-- Software architecture and performance optimization
-- Production pipelines and automation
-- Technical leadership, from prototype to delivery
+- Shared data structures and reusable production tooling
+- Artist-facing Unreal Engine tools and web workflows
+- Python / FastAPI services, Perforce, Deadline, and Jenkins CI/CD
+- Technical leadership with developers and artists, from prototype to delivery

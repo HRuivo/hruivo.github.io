@@ -1,10 +1,10 @@
 import type { Component } from "svelte";
 
-export const pageSlugs = ["intro", "resume", "projects"] as const;
+export const pageSlugs = ["intro", "work", "projects", "resume"] as const;
 export type PageSlug = (typeof pageSlugs)[number];
 
 export type SectionLayout =
-    "hero" | "text" | "split" | "list" | "project" | "contact";
+    "hero" | "text" | "split" | "list" | "project" | "feature" | "contact";
 
 export interface SectionMeta {
     title: string;

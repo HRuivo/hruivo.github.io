@@ -2,7 +2,7 @@
 title: Neotron OS
 eyebrow: Operating Systems
 description: Experimental RISC-V operating system written in Zig, running on QEMU.
-order: 1
+order: 4
 layout: project
 screenshot: /images/neotron.jpg
 screenshotAlt: ""

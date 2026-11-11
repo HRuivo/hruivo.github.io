@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="990" viewBox="0 0 1080 990" role="img" aria-labelledby="title desc">
+  <title id="title">Multi-brand automotive CGI pipeline: conceptual architecture</title>
+  <desc id="desc">Brand-specific imports converge on a common vehicle data structure used by shared Unreal Engine tools. A separate web layer uses SvelteKit, Bun, Python and FastAPI, deployed with Docker. Unreal and browser workflows can each initiate Deadline rendering using custom render plugins. Perforce stream organization and Jenkins CI/CD support the pipeline. This is a conceptual overview, not a service or deployment topology.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="m0 0 10 5-10 5Z" fill="#40634a"/></marker>
+    <style>
+      .paper { fill: #faf9f6; } .panel { fill: #f2f2ed; stroke: #deded8; stroke-width: 1.5; }
+      .card { fill: #faf9f6; stroke: #b7bfb4; stroke-width: 1.5; } .highlight { fill: #e6ede2; stroke: #40634a; stroke-width: 1.5; }
+      text { font-family: system-ui, sans-serif; fill: #20211f; } .heading { font-size: 25px; font-weight: 600; }
+      .label { font-size: 17px; letter-spacing: 1.3px; fill: #40634a; } .body { font-size: 20px; } .small { font-size: 17px; fill: #62655f; }
+      .arrow { fill: none; stroke: #40634a; stroke-width: 2; marker-end: url(#arrow); }
+      @media (prefers-color-scheme: dark) {
+        .paper, .card { fill: #20251f; } .panel { fill: #282e27; stroke: #60685d; } .card { stroke: #7b8776; }
+        .highlight { fill: #34482f; stroke: #acc6a0; } text { fill: #f2f2ed; } .small { fill: #c0c8bc; } .label { fill: #b4cda9; }
+        .arrow { stroke: #acc6a0; } marker path { fill: #acc6a0; }
+      }
+    </style>
+  </defs>
+  <rect class="paper" width="1080" height="990"/>
+  <text class="label" x="40" y="44">PRODUCTION SYSTEMS · CONCEPTUAL OVERVIEW</text>
+  <text class="heading" x="40" y="83">Multi-brand automotive CGI pipeline</text>
+  <text class="small" x="40" y="113">Simplified, sanitized conceptual architecture. Brand labels are fictional.</text>
+
+  <rect class="panel" x="40" y="145" width="580" height="430" rx="6"/>
+  <text class="label" x="62" y="179">VEHICLE DATA &amp; SHARED TOOLS</text>
+  <rect class="card" x="62" y="201" width="165" height="84" rx="4"/>
+  <rect class="card" x="247" y="201" width="165" height="84" rx="4"/>
+  <rect class="card" x="432" y="201" width="165" height="84" rx="4"/>
+  <text class="body" x="144" y="234" text-anchor="middle">Brand A</text>
+  <text class="small" x="144" y="261" text-anchor="middle">Specific import</text>
+  <text class="body" x="329" y="234" text-anchor="middle">Brand B</text>
+  <text class="small" x="329" y="261" text-anchor="middle">Specific import</text>
+  <text class="body" x="514" y="234" text-anchor="middle">Brand C</text>
+  <text class="small" x="514" y="261" text-anchor="middle">Specific import</text>
+  <path class="arrow" d="M144 285v22h185v28"/>
+  <path class="arrow" d="M329 285v50"/>
+  <path class="arrow" d="M514 285v22H329v28"/>
+  <rect class="highlight" x="106" y="337" width="448" height="76" rx="4"/>
+  <text class="body" x="330" y="369" text-anchor="middle">Common vehicle data structure</text>
+  <text class="small" x="330" y="395" text-anchor="middle">Consistent input for downstream components</text>
+  <path class="arrow" d="M330 413v37"/>
+  <rect class="card" x="106" y="452" width="448" height="93" rx="4"/>
+  <text class="body" x="330" y="486" text-anchor="middle">Shared Unreal Engine tooling</text>
+  <text class="small" x="330" y="515" text-anchor="middle">Reusable plugins · Production &amp; rigging tools</text>
+
+  <rect class="panel" x="646" y="145" width="394" height="430" rx="6"/>
+  <text class="label" x="670" y="179">WEB COMPONENTS</text>
+  <rect class="card" x="670" y="201" width="346" height="94" rx="4"/>
+  <text class="body" x="843" y="236" text-anchor="middle">Browser interface</text>
+  <text class="small" x="843" y="266" text-anchor="middle">SvelteKit · Bun</text>
+  <rect class="card" x="670" y="316" width="346" height="94" rx="4"/>
+  <text class="body" x="843" y="352" text-anchor="middle">Backend REST services</text>
+  <text class="small" x="843" y="382" text-anchor="middle">Python · FastAPI</text>
+  <text class="body" x="670" y="454">Docker deployment</text>
+  <text class="small" x="670" y="483">Web frontend and backend only.</text>
+  <text class="small" x="670" y="520">API and integration paths omitted.</text>
+  <text class="small" x="670" y="546">Boxes do not indicate deployment units.</text>
+
+  <rect class="panel" x="40" y="602" width="1000" height="235" rx="6"/>
+  <text class="label" x="62" y="639">RENDER INITIATION · TWO PRODUCTION SURFACES</text>
+  <rect class="card" x="62" y="662" width="240" height="61" rx="4"/>
+  <rect class="card" x="62" y="745" width="240" height="61" rx="4"/>
+  <text class="body" x="182" y="700" text-anchor="middle">Unreal Engine</text>
+  <text class="body" x="182" y="783" text-anchor="middle">Browser workflow</text>
+  <path class="arrow" d="M302 692h120v42h68"/>
+  <path class="arrow" d="M302 775h120v-41h68"/>
+  <rect class="highlight" x="492" y="681" width="524" height="106" rx="4"/>
+  <text class="body" x="754" y="717" text-anchor="middle">Deadline rendering</text>
+  <text class="small" x="754" y="747" text-anchor="middle">Custom Deadline render plugins</text>
+  <text class="small" x="754" y="772" text-anchor="middle">Submission internals and execution details omitted</text>
+
+  <rect class="panel" x="40" y="862" width="1000" height="88" rx="6"/>
+  <text class="label" x="62" y="891">SUPPORTING PRODUCTION INFRASTRUCTURE</text>
+  <text class="body" x="62" y="925">Perforce stream organization</text>
+  <text class="body" x="615" y="925">Jenkins CI/CD</text>
+  <text class="small" x="40" y="978">Conceptual relationships only. Proprietary assets, service topology, and source code are omitted.</text>
+</svg>

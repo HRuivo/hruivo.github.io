@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="620" viewBox="0 0 960 620" role="img" aria-labelledby="title desc">
+  <title id="title">Vehicle data normalization with fictional brands</title>
+  <desc id="desc">Three fictional brands each have brand-specific data and import logic. Their imports converge on a common vehicle data structure that is consumed by shared downstream production tools. No proprietary schemas or formats are shown.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="m0 0 10 5-10 5Z" fill="#40634a"/></marker>
+    <style>
+      .paper { fill: #faf9f6; } .card { fill: #f2f2ed; stroke: #b7bfb4; stroke-width: 1.5; } .highlight { fill: #e6ede2; stroke: #40634a; stroke-width: 1.5; }
+      text { font-family: system-ui, sans-serif; fill: #20211f; } .label { font-size: 17px; letter-spacing: 1px; fill: #40634a; }
+      .body { font-size: 22px; } .small { font-size: 18px; fill: #62655f; }
+      .arrow { fill: none; stroke: #40634a; stroke-width: 2; marker-end: url(#arrow); }
+      @media (prefers-color-scheme: dark) {
+        .paper { fill: #20251f; } .card { fill: #282e27; stroke: #7b8776; } .highlight { fill: #34482f; stroke: #acc6a0; }
+        text { fill: #f2f2ed; } .small { fill: #c0c8bc; } .label { fill: #b4cda9; } .arrow { stroke: #acc6a0; } marker path { fill: #acc6a0; }
+      }
+    </style>
+  </defs>
+  <rect class="paper" width="960" height="620"/>
+  <text class="label" x="40" y="44">VEHICLE DATA NORMALIZATION</text>
+  <text class="small" x="40" y="77">Fictional brands · Conceptual relationships · Proprietary schemas omitted</text>
+  <rect class="card" x="40" y="110" width="270" height="130" rx="5"/>
+  <rect class="card" x="345" y="110" width="270" height="130" rx="5"/>
+  <rect class="card" x="650" y="110" width="270" height="130" rx="5"/>
+  <text class="body" x="175" y="150" text-anchor="middle">Brand A</text>
+  <text class="small" x="175" y="184" text-anchor="middle">Source vehicle data</text>
+  <text class="small" x="175" y="214" text-anchor="middle">Brand-specific import</text>
+  <text class="body" x="480" y="150" text-anchor="middle">Brand B</text>
+  <text class="small" x="480" y="184" text-anchor="middle">Source vehicle data</text>
+  <text class="small" x="480" y="214" text-anchor="middle">Brand-specific import</text>
+  <text class="body" x="785" y="150" text-anchor="middle">Brand C</text>
+  <text class="small" x="785" y="184" text-anchor="middle">Source vehicle data</text>
+  <text class="small" x="785" y="214" text-anchor="middle">Brand-specific import</text>
+  <path class="arrow" d="M175 240v40h305v43"/>
+  <path class="arrow" d="M480 240v83"/>
+  <path class="arrow" d="M785 240v40H480v43"/>
+  <rect class="highlight" x="205" y="325" width="550" height="100" rx="5"/>
+  <text class="body" x="480" y="367" text-anchor="middle">Common vehicle data structure</text>
+  <text class="small" x="480" y="400" text-anchor="middle">Consistent inputs across brands</text>
+  <path class="arrow" d="M480 425v62"/>
+  <rect class="card" x="205" y="489" width="550" height="84" rx="5"/>
+  <text class="body" x="480" y="523" text-anchor="middle">Shared downstream production tools</text>
+  <text class="small" x="480" y="552" text-anchor="middle">Reusable Unreal Engine tooling and pipeline components</text>
+  <text class="small" x="40" y="606">Brand-specific conversion stays at the import boundary.</text>
+</svg>

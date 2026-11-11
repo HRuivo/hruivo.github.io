@@ -4,14 +4,17 @@
 
     const tabs = [
         { label: "Intro", href: "/" },
-        { label: "Resume", href: "/resume" },
+        { label: "Work", href: "/work" },
         { label: "Projects", href: "/projects" },
+        { label: "Resume", href: "/resume" },
     ];
 
     const isActive = (href: string) =>
         href === "/"
             ? page.route.id === "/"
-            : page.params.page === href.slice(1);
+            : page.params.page === href.slice(1)
+              || page.route.id === href
+              || page.route.id?.startsWith(`${href}/`) === true;
 </script>
 
 <header class="site-header">

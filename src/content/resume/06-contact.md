@@ -8,3 +8,4 @@ linkLabel: Download PDF
 download: true
 ---
 
+The downloadable CV includes the automotive CGI pipeline case study and the production engineering experience summarized here.

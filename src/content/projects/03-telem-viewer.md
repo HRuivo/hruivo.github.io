@@ -2,7 +2,7 @@
 title: Artemis II Mission Telemetry Viewer
 eyebrow: Mission Data Visualization
 description: NASA's Artemis II telemetry visualized with Telion and Mission Dashboard.
-order: 4
+order: 2
 layout: project
 screenshot: ""
 screenshotAlt: ""

@@ -7,12 +7,18 @@
   let screenshot = $derived(section.screenshot || '/images/project-placeholder.svg');
 </script>
 
-<section class:hero={section.layout === 'hero'} class:project={section.layout === 'project'} class:contact={section.layout === 'contact'} id={section.id}>
+<section class:hero={section.layout === 'hero'} class:project={section.layout === 'project'} class:feature={section.layout === 'feature'} class:contact={section.layout === 'contact'} id={section.id}>
   <div class="section-index" aria-hidden="true">{String(index + 1).padStart(2, '0')}</div>
 
   <div class="section-heading">
     {#if section.eyebrow}<p class="eyebrow">{section.eyebrow}</p>{/if}
-    <h2>{section.title}</h2>
+    <h2>
+      {#if section.layout === 'feature' && section.href}
+        <a class="feature-title" href={section.href.startsWith('/') ? `${base}${section.href}` : section.href}>{section.title}</a>
+      {:else}
+        {section.title}
+      {/if}
+    </h2>
     {#if section.description}<p class="description">{section.description}</p>{/if}
   </div>
 

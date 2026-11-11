@@ -7,8 +7,7 @@
 </script>
 
 <svelte:head>
-  <title>Software Developer — Portfolio</title>
-  <meta name="description" content="Software developer building thoughtful, reliable digital products." />
+  <title>Hugo Ruivo — Senior Software Engineer · CGI Pipelines &amp; Production Systems</title>
 </svelte:head>
 
 <div class="site-shell">

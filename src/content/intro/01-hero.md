@@ -1,9 +1,9 @@
 ---
-title: Software developer
-eyebrow: Software developer · Embedded Systems · FPGA · Simulation
-description: Senior Software Engineer and Real-Time R&D Lead with 10+ years of experience building production simulation, visualization, and interactive 3D systems.
+title: CGI pipelines & production systems.
+eyebrow: Hugo Ruivo · Senior Software Engineer
+description: 10+ years connecting software architecture, artist-facing tools, and real-time 3D production.
 order: 1
 layout: hero
 ---
 
-I currently lead a cross-functional team developing a data-driven automotive visualization platform for multiple vehicle brands. Alongside my commercial work, I build systems-oriented projects involving Zig, telemetry, FPGA development, RISC-V, emulation, and real-time control, extending my simulation background toward embedded and aerospace software.
+I design production systems that connect vehicle data, Unreal Engine tools, Python services, and rendering workflows. As Real-Time R&D Lead at Digital Giant, I work with developers and artists to build shared infrastructure for multiple automotive brands, from architecture through delivery.

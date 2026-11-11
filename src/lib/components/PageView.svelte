@@ -4,10 +4,34 @@
   import type { PageSlug } from '$lib/types';
 
   let { slug }: { slug: PageSlug } = $props();
+  const pageMeta: Record<PageSlug, { title: string; description: string }> = {
+    intro: {
+      title: 'Hugo Ruivo — Senior Software Engineer · CGI Pipelines & Production Systems',
+      description: 'Senior software engineer building CGI production pipelines, artist-facing Unreal Engine tools, Python services, and rendering infrastructure.'
+    },
+    work: {
+      title: 'Professional Work — Hugo Ruivo',
+      description: 'Professional case studies in CGI pipeline engineering, software architecture, and production tooling. Explore a multi-brand automotive CGI pipeline.'
+    },
+    projects: {
+      title: 'Personal Projects — Hugo Ruivo',
+      description: 'Independent work in compiler design, telemetry, RISC-V systems, FPGA development, and AI integration with Unreal Engine.'
+    },
+    resume: {
+      title: 'Resume — Hugo Ruivo · Senior Software Engineer',
+      description: '10+ years in CGI pipelines, C++, Python, Unreal Engine, and simulation. Professional experience, core skills, and a downloadable CV.'
+    }
+  };
   let sections = $derived(getSections(slug));
-  let pageIntro = $derived(slug === 'projects' ? sections.find((section) => section.layout === 'hero') : undefined);
+  let isProjectPage = $derived(slug === 'projects' || slug === 'work');
+  let pageIntro = $derived(isProjectPage ? sections.find((section) => section.layout === 'hero') : undefined);
   let listedSections = $derived(sections.filter((section) => section !== pageIntro));
 </script>
+
+<svelte:head>
+  <title>{pageMeta[slug].title}</title>
+  <meta name="description" content={pageMeta[slug].description} />
+</svelte:head>
 
 <div class="page-layout">
   <main class="page-content">
@@ -15,7 +39,7 @@
       <Section section={pageIntro} index={0} />
     {/if}
     {#each listedSections as section, index (section.id)}
-      <Section {section} {index} showMedia={slug === 'projects' && section.layout === 'project'} />
+      <Section {section} {index} showMedia={isProjectPage && section.layout === 'project'} />
     {/each}
   </main>
 

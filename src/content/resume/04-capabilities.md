@@ -5,10 +5,11 @@ order: 2
 layout: list
 ---
 
-- **Languages:** Python, C/C++, Rust, Zig, TypeScript, VHDL
-- **Real-time systems:** Unreal Engine, Unity 3D, interactive applications, physics simulation
-- **Architecture:** modular frameworks, data-driven systems, web integrations, internal tooling development and deploy
-- **Production tooling:** rendering pipelines, configurators, automation, CI/CD
+- **Professional languages:** Python, C++, TypeScript
+- **Pipeline engineering:** vehicle data normalization, shared tooling, Unreal Engine rigging tools, custom Deadline plugins
+- **Web and services:** SvelteKit, Bun, FastAPI, REST APIs, Docker deployment for web frontends and backends
+- **Production infrastructure:** Perforce stream architecture, Git, Jenkins CI/CD, Unreal Engine automation tests
+- **Real-time and DCC tools:** Unreal Engine, Unity 3D, Houdini, Blender, physics simulation
 - **Performance:** profiling, optimization, real-time rendering
-- **Leadership:** technical direction, R&D, cross-functional teams
-- **Personal projects:** Zig, systems programming, emulation, FPGA design with VHDL
+- **Leadership:** software architecture, technical direction, R&D, collaboration with developers and artists
+- **Personal systems work:** Zig, compiler development, RISC-V, emulation, FPGA design with VHDL

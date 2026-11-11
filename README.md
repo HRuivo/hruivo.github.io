@@ -1,6 +1,6 @@
 # Minimal developer portfolio
 
-A content-driven portfolio built with SvelteKit, TypeScript, Bun, and mdsvex. The site has three top-level pages—Intro, Resume, and Projects—and assembles each page automatically from Markdown sections.
+A content-driven portfolio built with SvelteKit, TypeScript, Bun, and mdsvex. The site has four top-level pages—Intro, Work, Projects, and Resume—and assembles each page automatically from Markdown sections.
 
 ## Run it
 
@@ -40,7 +40,7 @@ linkLabel: View project
 The Markdown body is the section content. Use **normal Markdown** here.
 ```
 
-Available layouts are `hero`, `text`, `split`, `list`, `project`, and `contact`. The layout controls presentation only; all content stays in Markdown.
+Available layouts are `hero`, `text`, `split`, `list`, `project`, `feature`, and `contact`. The `feature` layout creates a highlighted case study card with a linked title and call to action. The layout controls presentation only; all content stays in Markdown.
 
 To add a section, create another `.md` file in the appropriate page folder. To reorder sections, change `order`. Update the placeholder email addresses, résumé details, project links, and personal copy before publishing.
 
@@ -65,6 +65,16 @@ The video replaces the screenshot with a responsive player with playback control
 For videos with speech or meaningful audio, add a WebVTT captions file using `videoCaptions: /videos/neotron-demo.vtt`. Set `videoLanguage` to its language code (defaults to `en`).
 
 Leave `videoSrc` empty to show the screenshot, or the blank placeholder when `screenshot` is also empty. `videoUrl` remains an optional external “Watch demo” link; leave it empty to hide the link.
+
+## Professional case study
+
+The automotive CGI pipeline case study lives at `/work/automotive-cgi-pipeline/`, implemented in `src/routes/work/automotive-cgi-pipeline/+page.svelte`. It is prerendered alongside the Markdown pages. Edit its technical diagrams in `static/images/automotive-pipeline-architecture.svg` and `static/images/vehicle-data-normalization.svg`.
+
+Homepage and Work cards link to the case study through Markdown frontmatter. Internal links and diagrams include the configured GitHub Pages base path. The Work navigation tab stays active on the nested case study route.
+
+The case study uses verified facts from `halon_portfolio_codex_handoff.md`. Detailed API paths, Perforce stream topology, Deadline execution modes, and performance metrics are intentionally omitted pending owner confirmation. Keep Docker deployment scoped to the web frontend and backend.
+
+The downloadable CV is `static/resume.pdf`; its application-specific editable source is in `documents/halon/`.
 
 ## Add a page
 

@@ -1,6 +1,6 @@
 ---
 title: Technical Artist
-eyebrow: Experience · 04
+eyebrow: Experience · 03
 description: Burrows · Greater London, UK
 order: 5
 layout: project

@@ -1,6 +1,6 @@
 ---
 title: Software Developer
-eyebrow: Experience · 05
+eyebrow: Experience · 04
 description: Mackevision · Stuttgart, Germany
 order: 6
 layout: project

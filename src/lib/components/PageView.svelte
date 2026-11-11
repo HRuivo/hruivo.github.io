@@ -20,7 +20,7 @@
   };
   let sections = $derived(getSections(slug));
   let isProjectPage = $derived(slug === 'projects' || slug === 'work');
-  let pageIntro = $derived(isProjectPage ? sections.find((section) => section.layout === 'hero') : undefined);
+  let pageIntro = $derived(sections.find((section) => section.layout === 'hero'));
   let listedSections = $derived(sections.filter((section) => section !== pageIntro));
 </script>
 

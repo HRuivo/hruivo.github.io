@@ -5,7 +5,7 @@
     { id: 'overview', title: 'Overview' },
     { id: 'engineering-challenges', title: 'Engineering challenges' },
     { id: 'architecture', title: 'Solution architecture' },
-    { id: 'nuke-deadline', title: 'Nuke & Deadline tooling' },
+    { id: 'nuke-deadline', title: 'Nuke & Deadline deep dive' },
     { id: 'contributions', title: 'My contributions' },
     { id: 'outcome', title: 'Outcome' }
   ];
@@ -33,16 +33,12 @@
     <section id="overview" aria-labelledby="overview-title">
       <h2 id="overview-title">Overview</h2>
       <p>Designed and developed production pipeline systems for automotive CGI workflows supporting multiple vehicle brands.</p>
-      <p>The pipeline addresses the challenge of integrating brand-specific vehicle data into a common production environment, enabling shared tooling and reusable rendering workflows across projects.</p>
-      <p>The system combines Unreal Engine production tools, Nuke automation, web-based interfaces, Python backend services, source-control infrastructure, and automated rendering.</p>
       <p>My responsibilities included system architecture, data pipeline design, tooling, Perforce stream architecture, CI/CD, Deadline render integrations, and Unreal Engine rigging tools.</p>
     </section>
 
     <section id="engineering-challenges" aria-labelledby="engineering-challenges-title">
       <h2 id="engineering-challenges-title">Engineering challenges</h2>
-      <p>Automotive CGI production requires handling vehicle data from multiple brands, each with its own source structures and import requirements.</p>
-      <p>Rather than requiring downstream tools to handle every brand-specific format independently, the pipeline converts incoming data into a common structure.</p>
-      <p>This provides a consistent foundation for Unreal Engine tooling and downstream production workflows.</p>
+      <p>Automotive CGI production requires handling vehicle data from multiple brands, each with its own source structures and import requirements. Shared downstream tools need a consistent representation of that data.</p>
       <p>Another challenge is providing different ways to initiate rendering work. The system supports rendering workflows initiated directly within Unreal Engine and through a web interface.</p>
     </section>
 
@@ -68,13 +64,19 @@
     </section>
 
     <section id="nuke-deadline" aria-labelledby="nuke-deadline-title">
-      <h2 id="nuke-deadline-title">From shared Python scripts to a dedicated Deadline plugin</h2>
+      <h2 id="nuke-deadline-title">Panorama stitching: from shared scripts to a Deadline plugin</h2>
       <h3>The problem</h3>
-      <p>Existing Python automation for Nuke workflows lived in an ad hoc shared folder on the company network. Hardcoded values in the scripts caused recurring issues, and deployment needed a more deliberate home.</p>
-      <h3>What I changed</h3>
-      <p>I refactored the existing automation into a dedicated Python Deadline plugin that calls Nuke scripts. I moved deployment into the Deadline plugin structure and reworked the logic to remove the hardcoded assumptions behind the recurring issues.</p>
+      <p>Existing Python automation for Nuke panorama stitching lived in an ad hoc shared folder on the company network. The input file-path arguments were hardcoded, limiting which generated frames could be used, and the output path was also fixed. Missing or invalid inputs were not handled.</p>
+      <h3>The decision</h3>
+      <p>I chose to refactor the existing automation into a dedicated Deadline plugin. This gave deployment and Nuke script execution a defined place within the production rendering workflow while retaining the existing automation as the starting point.</p>
+      <h3>Implementation</h3>
+      <p>I built the Python Deadline plugin to invoke the Nuke scripts and reworked the panorama-stitching input and output path handling. Removing the fixed-path assumptions made the workflow flexible enough to use the generated frames being processed.</p>
+      <h3>Error handling</h3>
+      <p>I added error detection in the plugin and reporting back to Deadline. This brought execution errors into the rendering workflow, addressing the earlier scripts' lack of handling for missing or invalid inputs.</p>
+      <h3>Verification</h3>
+      <p>I ran tests in a development Deadline environment to verify the plugin without affecting production renders.</p>
       <h3>The result</h3>
-      <p>The automation became a dedicated Deadline integration with a defined deployment location. Reworking the hardcoded logic addressed recurring problems in the earlier scripts.</p>
+      <p>The workflow gained a dedicated deployment location, flexible handling of stitching input and output paths, and error reporting to Deadline. The development environment provided a way to verify changes separately from production rendering.</p>
     </section>
 
     <section id="contributions" aria-labelledby="contributions-title">
@@ -93,10 +95,9 @@
     <section id="outcome" aria-labelledby="outcome-title">
       <h2 id="outcome-title">Outcome</h2>
       <p>The resulting architecture supports automotive CGI workflows across multiple vehicle brands, using brand-specific data conversion to provide a consistent foundation for shared downstream tooling.</p>
-      <p>The pipeline integrates artist-facing tools, rendering workflows, source-control organization, and production automation within a reusable technical architecture.</p>
       <div class="case-study-links">
         <a class="text-link" href={`${base}/#02-current-role`}>View experience <span aria-hidden="true">↗</span></a>
-        <a class="text-link" href={`${base}/resume.pdf`} download>Download CV <span aria-hidden="true">↓</span></a>
+        <a class="text-link" href={`${base}/HugoRuivoResume.pdf`} download>Download CV <span aria-hidden="true">↓</span></a>
         <a class="text-link" href={`${base}/projects/`}>Explore personal projects <span aria-hidden="true">↗</span></a>
       </div>
     </section>

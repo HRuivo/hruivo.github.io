@@ -21,7 +21,7 @@ href: /work/automotive-cgi-pipeline/
 linkLabel: Read the pipeline case study
 ---
 
-Lead architecture, pipeline development, and delivery for automotive CGI production, collaborating with developers and artists.
+- Lead architecture, pipeline development, and delivery for automotive CGI production, collaborating with developers and artists.
 
 - Architected a multi-brand automotive CGI pipeline integrating Unreal Engine production tooling, Python services, web interfaces, source control, CI/CD, and automated rendering.
 

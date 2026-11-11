@@ -74,7 +74,7 @@ The current-role section on Intro and the featured Work card link to the case st
 
 The case study uses verified facts from `halon_portfolio_codex_handoff.md`. Detailed API paths, Perforce stream topology, Deadline execution modes, and performance metrics are intentionally omitted pending owner confirmation. Keep Docker deployment scoped to the web frontend and backend.
 
-The downloadable CV is `static/resume.pdf`; its application-specific editable source is in `documents/halon/`.
+The downloadable CV is `static/HugoRuivoResume.pdf`; its application-specific editable source is in `documents/halon/`.
 
 ## Add a page
 
@@ -86,7 +86,7 @@ The downloadable CV is `static/resume.pdf`; its application-specific editable so
 
 The site uses `adapter-static` to prerender every page into `build/`. No server is required.
 
-Place your résumé PDF at `static/resume.pdf` before publishing. The Intro page links directly to this file for download.
+Place your résumé PDF at `static/HugoRuivoResume.pdf` before publishing. The Intro page links directly to this file for download.
 
 1. Push this repository to GitHub with `main` as the default branch.
 2. In the repository's **Settings → Pages**, choose **GitHub Actions** as the build and deployment source.

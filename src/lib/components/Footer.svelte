@@ -9,6 +9,7 @@
 <footer>
     <p>© {new Date().getFullYear()} · Hugo Ruivo</p>
     <nav class="social-links" aria-label="Social links">
+        <a href="mailto:hugoruivo89@gmail.com">Email <span aria-hidden="true">→</span></a>
         {#each socials as social}
             <a href={social.href} target="_blank" rel="noreferrer">
                 {social.label}

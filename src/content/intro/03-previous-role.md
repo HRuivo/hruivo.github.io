@@ -4,7 +4,7 @@ eyebrow: Experience · 02
 description: Hogarth Worldwide · Full-time
 order: 4
 layout: project
-year: Feb 2020 — May 2022
+year: Jul 2020 — May 2022
 stack:
   - Unreal Engine
   - C++

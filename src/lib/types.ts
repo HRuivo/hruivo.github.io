@@ -17,6 +17,11 @@ export interface SectionMeta {
     href?: string;
     linkLabel?: string;
     download?: boolean;
+    actions?: {
+        label: string;
+        href: string;
+        download?: boolean;
+    }[];
     screenshot?: string;
     screenshotAlt?: string;
     videoSrc?: string;

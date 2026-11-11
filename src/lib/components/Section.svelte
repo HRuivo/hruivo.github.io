@@ -20,6 +20,15 @@
       {/if}
     </h2>
     {#if section.description}<p class="description">{section.description}</p>{/if}
+    {#if section.actions?.length}
+      <nav class="section-actions" aria-label="Quick links">
+        {#each section.actions as action}
+          <a class="text-link" href={action.href.startsWith('/') ? `${base}${action.href}` : action.href} download={action.download}>
+            {action.label} <span aria-hidden="true">{action.download ? '↓' : '→'}</span>
+          </a>
+        {/each}
+      </nav>
+    {/if}
   </div>
 
   <div class="section-content">

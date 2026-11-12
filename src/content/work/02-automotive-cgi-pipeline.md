@@ -1,6 +1,6 @@
 ---
 title: Multi-Brand Automotive CGI Production Pipeline
-eyebrow: Digital Giant · Professional work
+eyebrow: Professional work
 description: Shared vehicle data, artist-facing tooling, and connected rendering workflows.
 order: 2
 layout: feature

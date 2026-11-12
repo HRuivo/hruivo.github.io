@@ -19,3 +19,4 @@ linkLabel: Github Project
 ---
 
 32-bit RISC-V kernel with virtual memory, cooperative process scheduling, and a user-mode shell with system calls. Includes VirtIO drivers for block storage, graphics, and keyboard input, plus a framebuffer text console. Based on the OS in 1000 Lines tutorial and extended to explore kernel development and device drivers.
+Development on top of the tutorial was made with assistance of codex with a custom skill that turns it into a tutor, giving only the necessary teachings and next steps with hints on how to implement requested goal.

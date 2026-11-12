@@ -18,4 +18,5 @@ href: https://lnkd.in/p/eZtJkspG
 linkLabel: Linkedin Post
 ---
 
-Flight firmware using Lunara for autonomous takeoff, waypoint navigation, and landing of the F-16 and Su-25 in DCS. Telion streams telemetry to Mission Dashboard and relays commands back to the aircraft.
+Flight firmware using my DSL, Lunara, for autonomous takeoff, waypoint navigation, and landing of the F-16 and Su-25 in DCS. Telion streams telemetry to Mission Dashboard and relays commands back to the aircraft.
+The logic with Lunara was coded by an AI Agent, one of the aims of the language itself, to be fault aware and enforce a lot of its constraints, like not using the heap, at compile time to give the agent a way to program and test until it compiles correctly.

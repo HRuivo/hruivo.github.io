@@ -4,7 +4,6 @@
 
     const tabs = [
         { label: "Intro", href: "/" },
-        { label: "Work", href: "/work" },
         { label: "Projects", href: "/projects" },
     ];
 

@@ -70,7 +70,7 @@ Leave `videoSrc` empty to show the screenshot, or the blank placeholder when `sc
 
 The automotive CGI pipeline case study lives at `/work/automotive-cgi-pipeline/`, implemented in `src/routes/work/automotive-cgi-pipeline/+page.svelte`. It is prerendered alongside the Markdown pages. Earlier conceptual diagrams remain in `static/images/automotive-pipeline-architecture.svg` and `static/images/vehicle-data-normalization.svg` for reuse.
 
-The current-role section on Intro and the featured Work card link to the case study through Markdown frontmatter. Internal links and diagrams include the configured GitHub Pages base path. The Work navigation tab stays active on the nested case study route.
+The current-role section on Intro and the featured Work card link to the case study through Markdown frontmatter. Internal links and diagrams include the configured GitHub Pages base path.
 
 The case study uses verified facts from `halon_portfolio_codex_handoff.md`. Detailed API paths, Perforce stream topology, Deadline execution modes, and performance metrics are intentionally omitted pending owner confirmation. Keep Docker deployment scoped to the web frontend and backend.
 
